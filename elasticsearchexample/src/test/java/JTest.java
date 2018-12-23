@@ -35,8 +35,10 @@ import org.junit.Test;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.stream.Collectors;
 
 /**
  * @author SongChao
@@ -176,7 +178,7 @@ public class JTest {
         }
     }
 
-    @Test
+    //@Test
     public void finalTest(){
         //创建连接
         RestHighLevelClient client = new RestHighLevelClient(
@@ -272,6 +274,12 @@ public class JTest {
         }
     }
 
+    @Test
+    public void test2(){
+        System.out.println(4 >>1);
+
+        System.out.println(Arrays.asList(1,2,3).stream().filter(item -> item % 2 == 0).findFirst().get());
+    }
 }
 
 

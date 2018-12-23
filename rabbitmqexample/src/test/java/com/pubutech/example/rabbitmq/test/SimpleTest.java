@@ -34,6 +34,59 @@ import java.util.concurrent.TimeoutException;
 public class SimpleTest {
 
     @Test
+    public void test1(){
+        //第一步配置连接工厂
+        ConnectionFactory factory = new ConnectionFactory();
+        factory.setUsername("test");
+        factory.setPassword("test123");
+        factory.setVirtualHost("/");
+        factory.setHost("192.168.199.133");
+        factory.setPort(5672);
+        Connection conn = null;
+
+        //创建连接
+        try {
+            conn = factory.newConnection();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (TimeoutException e) {
+            e.printStackTrace();
+        }
+
+        //创建channel
+        Channel channel = null;
+
+        if(conn != null){
+            try {
+                channel = conn.createChannel();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+        System.out.println("Success :"+channel.isOpen());
+
+        //最后关闭channel
+        if(channel != null){
+            try {
+                channel.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+
+        //最后关闭conn
+        if(conn != null){
+            try {
+                conn.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+
+    //@Test
     public void test(){
         //第一步配置连接工厂
         ConnectionFactory factory = new ConnectionFactory();

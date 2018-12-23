@@ -1,0 +1,15 @@
+server:
+  port: 8888
+
+Spring:
+  application:
+    name: rabbitmq-example
+  rabbitmq:
+    host: 192.168.199.133
+    port: 5672
+    username: test
+    password: test123
+    virtual-host: /
+    vhost: /
+    firstdelaytimeout: 300000
+    seconddelaytimeout: 600000
