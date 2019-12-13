@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="example-annotation" />
+        <module name="example-aop" />
+        <module name="nioexample" />
+        <module name="example-patterns" />
+        <module name="elasticsearchexample" />
+        <module name="example-rabbitmq" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="elasticsearchexample" target="1.8" />
+      <module name="example" target="1.8" />
+      <module name="example-annotation" target="1.8" />
+      <module name="example-aop" target="1.8" />
+      <module name="example-patterns" target="1.8" />
+      <module name="example-rabbitmq" target="1.8" />
+      <module name="nioexample" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="elasticsearchexample" options="-parameters" />
+      <module name="example-annotation" options="-parameters" />
+      <module name="example-aop" options="-parameters" />
+      <module name="example-patterns" options="-parameters" />
+      <module name="example-rabbitmq" options="-parameters" />
+      <module name="nioexample" options="-parameters" />
+    </option>
+  </component>
+</project>

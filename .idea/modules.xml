@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/elasticsearchexample/elasticsearchexample.iml" filepath="$PROJECT_DIR$/elasticsearchexample/elasticsearchexample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example.iml" filepath="$PROJECT_DIR$/example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/annotation/example-annotation.iml" filepath="$PROJECT_DIR$/annotation/example-annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aop/example-aop.iml" filepath="$PROJECT_DIR$/aop/example-aop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/designpatterns/example-patterns.iml" filepath="$PROJECT_DIR$/designpatterns/example-patterns.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rabbitmqexample/example-rabbitmq.iml" filepath="$PROJECT_DIR$/rabbitmqexample/example-rabbitmq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nioexample/nioexample.iml" filepath="$PROJECT_DIR$/nioexample/nioexample.iml" />
+    </modules>
+  </component>
+</project>
